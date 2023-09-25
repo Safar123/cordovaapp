@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css">
+        <title>Scanner</title>
+    </head>
+    <body>
+        <div data-role="page"  data-url="panel-responsive-page1">
+            <div data-role="header">
+                <h1><a href="#panel-responsive-page1">SCANNER V1.0</a></h1>
+                <a href="#popupMenu" data-rel="popup" data-transition="slideup" class="ui-button ui-corner-all ui-shadow ui-button-inline ui-button-a">Actions<span class="ui-icon ui-icon-gear"></span></a>
+                <div data-role="popup" id="popupMenu" data-theme="b">
+                    <ul data-role="listview" data-inset="true" style="min-width:210px;">
+                        <li data-role="list-divider">Choose an action</li>
+                        <li><button onclick="removeData()">Delete Local Data</button></li>
+                        <li><button class="clearCloudData">Delete Cloud Data</button></li>
+                    </ul>
+                </div>
+            </div><!-- /header -->
+            <div role="main" class="ui-content jqm-content jqm-fullwidth">
+                <div data-demo-html="#panel-responsive-page1">
+                    <button id="addDataToLOcal">ADD Data to Local</button>
+                    <a href="#formData" data-role="button">DISPLAY LOCAL DATA</a>
+                    <button id="uploadToCloud">UPLOAD TO CLOUD</button>
+                    <a href="#api" data-role="button">DISPLAY CLOUD DATA</a>
+                </div><!--/demo-html -->
+                <br />
+            </div><!-- /content -->
+
+            <div data-role="footer">
+                <center>
+                    <h6>Assignment By Saffar Subedi</h6>
+                </center>
+            </div>
+        </div>
+        <div data-role="page" class="jqm-demos ui-responsive-panel" id="formData" data-title="Panel responsive page"
+             data-url="panel-responsive-page1">
+            <div data-role="header">
+                <h1>Local Data</h1>
+                <a href="#popupMenu1" data-rel="popup" data-transition="slideup" class="ui-button ui-corner-all ui-shadow ui-button-inline ui-button-a">Actions<span class="ui-icon ui-icon-gear"></span></a>
+                <div data-role="popup" id="popupMenu1" data-theme="b">
+                    <ul data-role="listview" data-inset="true" style="min-width:210px;">
+                        <li data-role="list-divider">Choose an action</li>
+                        <li><button onclick="removeData()">Delete Local Data</button></li>
+                        <li><button class="clearCloudData">Delete Cloud Data</button></li>
+                    </ul>
+                </div>
+            </div><!-- /header -->
+            <div role="main" class="ui-content jqm-content jqm-fullwidth">
+                <h1>Local Storage Data</h1>
+                    <div data-demo-html="#panel-responsive-page1">
+                        <div class="mylocaldata">
+                        </div>
+                    </div><!--/demo-html -->
+                    <br />
+                    <a href="../" data-rel="back" data-ajax="false"
+                       class="ui-btn ui-shadow ui-corner-all ui-mini ui-btn-inline ui-icon-carat-l ui-btn-icon-left ui-alt-icon ui-nodisc-icon">Back</a>
+                </div><!-- /content -->
+
+                <div>
+                    <center>
+                        <h6>Assignment By Saffar Subedi</h6>
+                    </center>
+                </div>
+        </div>
+        <div data-role="page" class="jqm-demos ui-responsive-panel" id="api" data-title="Panel responsive page"
+             data-url="panel-responsive-page1">
+            <div data-role="header">
+                <h1>Cloud Data</h1>
+                <a href="#popupMenu2" data-rel="popup" data-transition="slideup" class="ui-button ui-corner-all ui-shadow ui-button-inline ui-button-a">Actions<span class="ui-icon ui-icon-gear"></span></a>
+                <div data-role="popup" id="popupMenu2" data-theme="b">
+                    <ul data-role="listview" data-inset="true" style="min-width:210px;">
+                        <li data-role="list-divider">Choose an action</li>
+                        <li><button onclick="removeData()">Delete Local Data</button></li>
+                        <li><button class="clearCloudData">Delete Cloud Data</button></li>
+                    </ul>
+                </div>
+            </div><!-- /header -->
+            <div role="main" class="ui-content jqm-content ">
+                <div data-demo-html="#panel-responsive-page1">
+                    <div class="mypanel">
+                    </div>
+                </div><!--/demo-html -->
+                <br />
+                <a href="../" data-rel="back" data-ajax="false"
+                   class="ui-btn ui-shadow ui-corner-all ui-mini ui-btn-inline ui-icon-carat-l ui-btn-icon-left ui-alt-icon ui-nodisc-icon">Back</a>
+            </div><!-- /content -->
+
+            <div>
+                <center>
+                    <h6>Assignment By Saffar Subedi</h6>
+                </center>
+            </div>
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/jquery-1.11.3.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>
